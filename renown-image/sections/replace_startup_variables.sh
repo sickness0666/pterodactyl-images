@@ -19,6 +19,6 @@ Debug "STARTUP is: $STARTUP"
 MODIFIED_STARTUP=$(echo "${STARTUP}" | sed -e 's/{{/${/g' -e 's/}}/}/g')
 MODIFIED_STARTUP=$(eval "echo \"$MODIFIED_STARTUP\"")
 
-Debug ":/home/container$ ${MODIFIED_STARTUP}"
+#Debug ":/home/container$ ${MODIFIED_STARTUP}"
 
 Success "Variables replaced!"
